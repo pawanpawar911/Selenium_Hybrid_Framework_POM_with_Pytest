@@ -1,0 +1,14 @@
+29-12-2024 17:44:02: INFO: Starting Test1: Verifying Home Page
+29-12-2024 17:44:02: INFO: Opening URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+29-12-2024 17:44:10: INFO: Verifying HomePage LOGO
+29-12-2024 17:44:10: INFO: Logo is not present on the homepage
+29-12-2024 17:44:10: INFO: Test1: Home Page Completed
+29-12-2024 17:44:10: INFO: Starting Test2: Veryfying Login Window-1
+29-12-2024 17:44:14: INFO: Test Login Window-1 : Passed
+29-12-2024 17:44:14: INFO: Test2: Login Window-1 Completed
+29-12-2024 17:44:14: INFO: Starting Test3: Veryfying Login Window-2
+29-12-2024 17:44:15: INFO: Expected Invalid credentials, but got Invalid credential
+29-12-2024 17:44:15: INFO: Test3: Login Window-2 Completed
+29-12-2024 17:44:15: INFO: Starting Test4: Veryfying Login Window-3
+29-12-2024 17:44:17: INFO: Test Dashboard Page : Passed
+29-12-2024 17:44:17: INFO: Test4: Login Window-3  Completed
