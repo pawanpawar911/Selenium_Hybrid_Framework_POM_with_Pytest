@@ -1,0 +1,1 @@
+pytest -v -s .\test_cases\test_login_page.py

@@ -12,3 +12,31 @@
 29-12-2024 17:44:15: INFO: Starting Test4: Veryfying Login Window-3
 29-12-2024 17:44:17: INFO: Test Dashboard Page : Passed
 29-12-2024 17:44:17: INFO: Test4: Login Window-3  Completed
+29-12-2024 18:43:26: INFO: Starting Test1: Verifying Home Page
+29-12-2024 18:43:26: INFO: Opening URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+29-12-2024 18:43:33: INFO: Verifying HomePage LOGO
+29-12-2024 18:43:36: INFO: HomePage logo is displayed.
+29-12-2024 18:43:36: INFO: Test1: Home Page Completed
+29-12-2024 18:43:36: INFO: Starting Test2: Veryfying Login Window-1
+29-12-2024 18:43:40: INFO: Test Login Window-1 : Passed
+29-12-2024 18:43:40: INFO: Test2: Login Window-1 Completed
+29-12-2024 18:43:40: INFO: Starting Test3: Veryfying Login Window-2
+29-12-2024 18:43:41: INFO: Test Login Window-2 : Passed
+29-12-2024 18:43:41: INFO: Test3: Login Window-2 Completed
+29-12-2024 18:43:41: INFO: Starting Test4: Veryfying Login Window-3
+29-12-2024 18:43:42: INFO: Test Dashboard Page : Passed
+29-12-2024 18:43:42: INFO: Test4: Login Window-3  Completed
+29-12-2024 18:44:59: INFO: Starting Test1: Verifying Home Page
+29-12-2024 18:44:59: INFO: Opening URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+29-12-2024 18:45:05: INFO: Verifying HomePage LOGO
+29-12-2024 18:45:08: INFO: HomePage logo is displayed.
+29-12-2024 18:45:08: INFO: Test1: Home Page Completed
+29-12-2024 18:45:08: INFO: Starting Test2: Veryfying Login Window-1
+29-12-2024 18:45:12: INFO: Test Login Window-1 : Passed
+29-12-2024 18:45:12: INFO: Test2: Login Window-1 Completed
+29-12-2024 18:45:12: INFO: Starting Test3: Veryfying Login Window-2
+29-12-2024 18:45:13: INFO: Test Login Window-2 : Passed
+29-12-2024 18:45:13: INFO: Test3: Login Window-2 Completed
+29-12-2024 18:45:13: INFO: Starting Test4: Veryfying Login Window-3
+29-12-2024 18:45:14: INFO: Test Dashboard Page : Passed
+29-12-2024 18:45:14: INFO: Test4: Login Window-3  Completed
