@@ -36,9 +36,7 @@ def test_home_page(driver):
         
     finally: 
         logger.info("Test1: Home Page Completed")
-
-        
-#@pytest.mark.skip(reason="no way of currently testing this")     
+    
 def test_login_window_invalid_cred1(driver):
     logger = LogGenerate.logger_file()
     logger.info("Starting Test2: Veryfying Login Window-1")
@@ -65,9 +63,7 @@ def test_login_window_invalid_cred1(driver):
         
     finally: 
         logger.info("Test2: Login Window-1 Completed")
-        
-        
-#@pytest.mark.skip(reason="no way of currently testing this")       
+              
 def test_login_window_invalid_cred2(driver):
     logger = LogGenerate.logger_file()
     logger.info("Starting Test3: Veryfying Login Window-2")
@@ -100,7 +96,6 @@ def test_login_window_invalid_cred2(driver):
     finally: 
         logger.info("Test3: Login Window-2 Completed")
 
-#@pytest.mark.skip(reason="no way of currently testing this")
 def test_login_window_valid_cred(driver):
     logger = LogGenerate.logger_file()
     logger.info("Starting Test4: Veryfying Login Window-3")
@@ -119,7 +114,7 @@ def test_login_window_valid_cred(driver):
         actual_text = "Dashboard"
         
         assert expected_text == actual_text, logger.info(f"Expected {expected_text}, but got {actual_text}")
-        logger.info("Test Dashboard Page : Passed")
+        logger.info("Test Correct Credential : Passed")
         
     except AssertionError as e:
         print(f"Assertion failed: {e}") 
@@ -128,70 +123,95 @@ def test_login_window_valid_cred(driver):
     finally: 
         logger.info("Test4: Login Window-3  Completed")
         
-#@pytest.mark.skip(reason="no way of currently testing this")
 def test_All_Tabs(driver):
+    logger = LogGenerate.logger_file()
+    logger.info("Starting Test5: Veryfying the All Tab")
+    
     all_tab_page = LoginPage(driver)
     
     try: 
+        logger.info("Starting Test1 of Test5: Veryfying the DashBoard Tab")
         all_tab_page.dashBoard_click()
         expected_text = all_tab_page.text_title()        
         actual_text = "Dashboard"
         
-        assert expected_text == actual_text, f"expected {expected_text}, but got {actual_text}"
-        print("All Tab Test Case1 -> passed: DashBoard Tab")
+        assert expected_text == actual_text, logger.info(f"Expected {expected_text}, but got {actual_text}")
+        logger.info("Test1 of Test5 Dashboard Tab : Passed")
         
     except AssertionError as e:
         print(f"Assertion failed: {e}")
         
+    finally:
+        logger.info("Test1 of Test5: DashBoard Tab Completed")
+         
     try: 
+        logger.info("Starting Test2 of Test5: Veryfying the Admin Tab")
         all_tab_page.admin_click()
         expected_text = all_tab_page.admin_title()        
         actual_text = "Admin"
         
-        assert expected_text == actual_text, f"Expected: {expected_text}, but got: {actual_text}"
-        print("All Tab Test Case2 -> passed: Admin Tab")
+        assert expected_text == actual_text, logger.info(f"Expected {expected_text}, but got {actual_text}")
+        logger.info("Test2 of Test5 Admin Tab : Passed")
         
     except AssertionError as e:
-        print(f"Assertion failed: {e}")       
+        print(f"Assertion failed: {e}") 
+        
+    finally:
+        logger.info("Test2 of Test5: DashBoard Tab Completed")      
         
     try: 
+        logger.info("Starting Test3 of Test5: Veryfying the Directory Tab")
         all_tab_page.directory_click()
         expected_text = all_tab_page.text_title()
         actual_text = "Directory"
         
-        assert expected_text == actual_text, f"expected {expected_text}, but got {actual_text}"
-        print("All Tab Test Case3 -> passed: Directory Tab")
+        assert expected_text == actual_text, logger.info(f"Expected {expected_text}, but got {actual_text}")
+        logger.info("Test3 of Test5 Directory Tab : Passed")
         
     except AssertionError as e:
         print(f"Assertion failed: {e}")
         
+    finally:
+        logger.info("Test3 of Test5: Directory Tab Completed")
+        
     try: 
+        logger.info("Starting Test4 of Test5: Veryfying the PIM Tab")
         all_tab_page.pim_click()
         expected_text = all_tab_page.text_title()
         actual_text = "PIM"
         
-        assert expected_text == actual_text, f"expected {expected_text}, but got {actual_text}"
-        print("All Tab Test Case4 -> passed: PIM Tab")
+        assert expected_text == actual_text, logger.info(f"Expected {expected_text}, but got {actual_text}")
+        logger.info("Test4 of Test5 PIM Tab : Passed")
         
     except AssertionError as e:
         print(f"Assertion failed: {e}")
+        
+    finally:
+        logger.info("Test4 of Test5: PIM Tab Completed")
            
     try: 
+        logger.info("Starting Test5 of Test5: Veryfying the Leave Tab")
         all_tab_page.leave_click()
         expected_text = all_tab_page.text_title()
         actual_text = "Leave"
         
-        assert expected_text == actual_text, f"expected {expected_text}, but got {actual_text}"
-        print("All Tab Test Case5 -> passed: Leave Tab")
+        assert expected_text == actual_text, logger.info(f"Expected {expected_text}, but got {actual_text}")
+        logger.info("Test5 of Test5 Leave Tab : Passed")
         
     except AssertionError as e:
         print(f"Assertion failed: {e}")
-
-@pytest.mark.skip(reason="no way of currently testing this")       
-def test_PIM_Tab(driver):
-    pim_page = LoginPage(driver)
-     
         
+    finally:
+        logger.info("Test5 of Test5: Leave Tab Completed")
+        
+    logger.info("Test5: All Tab Completed")
+     
+def test_PIM_Tab(driver):
+    logger = LogGenerate.logger_file()
+    logger.info("Starting Test6: Veryfying the PIM page field")
+    
+    pim_page = LoginPage(driver)
+  
     try: 
         pim_page.pim_click()
         
@@ -202,12 +222,12 @@ def test_PIM_Tab(driver):
         pim_page.pim_tab_EmpId("42398")
         pim_page.pim_tab_submit_button()
 
-        print("PIM Tab Test Case1 -> passed: PIM Tab")
-        
+        logger.info("Test6: PIM page field : Passed")       
     except AssertionError as e:
         print(f"Assertion failed: {e}")
-
-
+        
+    finally:
+        logger.info("Test6: PIM page field Completed")
 
 if __name__ == "__main__":
     pytest.main()
